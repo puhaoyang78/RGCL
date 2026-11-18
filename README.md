@@ -54,7 +54,7 @@ To score one function, save it as `function.c` and run:
 
 ```bash
 python -m rgcl predict --checkpoint "$run/best.safetensors" \
-  --source function.c --device cpu
+  --source function.c --device "$DEVICE"
 ```
 
 ## RQ1 — Main comparison
