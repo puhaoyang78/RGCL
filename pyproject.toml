@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rgcl"
+version = "0.1.0"
+description = "Repair-Guided Contextual Learning for function-level vulnerability detection"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = "MIT"
+dependencies = [
+  "torch==2.9.1",
+  "transformers==4.57.3",
+  "tokenizers==0.22.2",
+  "huggingface-hub==0.36.0",
+  "safetensors==0.7.0",
+  "numpy==2.4.0",
+  "scikit-learn==1.8.0",
+  "scipy==1.16.3",
+  "pyarrow==22.0.0",
+]
+
+[tool.setuptools]
+packages = ["rgcl"]
+
+[project.scripts]
+rgcl = "rgcl.cli:main"
