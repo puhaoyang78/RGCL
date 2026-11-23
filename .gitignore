@@ -12,4 +12,5 @@ runs/
 *.tmp
 /data/*
 !/data/README.md
-/checkpoints/
+/checkpoints/*
+!/checkpoints/README.md

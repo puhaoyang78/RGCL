@@ -169,10 +169,8 @@ python -m rgcl rq4 --data-dir "$DATA_DIR"
 
 ## Use an existing checkpoint
 
-Run the training command above to get a fine-tuned checkpoint. If you
-already have one, pass its local `.safetensors` path to
-`predict --checkpoint` to score a function. To evaluate a dataset split,
-prepare that dataset and use the same path with `evaluate --checkpoint`.
+Download a validation-selected checkpoint from ModelScope to run inference
+or evaluation directly. [Checkpoint downloads](checkpoints/README.md)
 
 To recreate the RQ tables from saved runs, place each model in its run
 directory with `selection.json` and `valid.metrics.json`. Write Test
